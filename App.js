@@ -1,19 +1,33 @@
 import React from "react";
 import  ReactDOM from "react-dom/client";
 
-// React.creatElement => React Elemnt - JS object => HTML Elemnt(render)
-const parent = React.createElement("div", {id: "parent"}, 
-    React.createElement("div",{id: "child"},[
-    React.createElement("h2",{},"I am in h2 tag"),
-    React.createElement("h3", {}, "I am in h3 tag")
+const title = <h1 id="title">Learning React from basic</h1>
+
+const Component =() => {
+    return <h2>I am another function function component, which resite in another function</h2>
+}
+// Creation of functional component in react
+
+const Heading = () => (
+    <div id="container">
+
+        {/* This is calling of React element inside it */}
+        {title} 
 
 
-]));
-console.log(parent);
+        {/* we can directly write any string and mathematical opearation with the help of curly braces{} */}
+        {1000+2000}
+        {<h2>My name is kanchan sharma</h2>}
 
-// JSX - it is a HTML like syntax, It is used to write development environment friendly code, bcoz react core code is very tough to read and maintain it.
-const heading = <h1 id = "heading">I am JSX</h1>
-console.log(heading);
+        
+        {/* This is calling method of function inside another function */}
+        {Component()}  
+        <Component/> 
+        <Component></Component>
+    <h1 className="heading">This is functional component Learning</h1>
+    </div>
+);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(heading);
+// rendering of functional component is used to do with angular bracket
+root.render(<Heading/>);
