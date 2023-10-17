@@ -55,3 +55,11 @@
     margin-left: 5%;
     margin-right: 0.5%;
 }
+
+.filter-btn{
+    margin: 15px;
+    cursor: pointer;
+    background-color: lightgoldenrodyellow;
+    padding: 5px;
+    border-radius: 5%;
+}
