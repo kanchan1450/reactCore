@@ -46,7 +46,7 @@
 
 .res-logo{
     width: 100%;
-    height: 50%;
+    height: 40%;
     border-radius: 20px;
 }
 .resto-container{
@@ -57,10 +57,9 @@
 }
 
 .filter-btn{
-    margin: 15px;
+    margin-left: 12px;
     cursor: pointer;
     background-color: lightgoldenrodyellow;
-    padding: 5px;
     border-radius: 5%;
 }
 
@@ -83,4 +82,8 @@
     
     cursor: pointer;
 }
-
+.filter{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px;
+}
