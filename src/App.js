@@ -7,6 +7,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Error from "./components/Error";
 
+
 const AppLayout = () => {
     return (
         <div className="app">
@@ -36,6 +37,8 @@ const AppRouter = createBrowserRouter([
                 path: "/contact",
                 element: <Contact/>,
             },
+
+        
         
 
         ],
